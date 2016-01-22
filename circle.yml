@@ -4,6 +4,7 @@ test:
     - ./gradlew :android:assembleDebug -Pcom.android.build.threadPoolSize=4
 
 deployment:
-  override:
+  debug:
+    branch: master
     commands:
       - mv android/build/outputs/apk/android-debug.apk "$CIRCLE_ARTIFACTS/iosched-$CIRCLE_BUILD_NUM-debug.apk"
