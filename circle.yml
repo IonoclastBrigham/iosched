@@ -1,4 +1,4 @@
 ## Customize test commands
 test:
   override:
-    - echo skipping tests
+    - ./gradlew :android:assembleDebug
