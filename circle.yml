@@ -1,4 +1,8 @@
 ## Customize test commands
 test:
   override:
-    - ./gradlew :android:assembleDebug -Pcom.android.build.threadPoolSize=2
+    - ./gradlew :android:assembleDebug -Pcom.android.build.threadPoolSize=4
+
+deploy:
+  override:
+   - mv android/build/outputs/apk/android-debug.apk $CIRCLE_ARTIFACTS/
