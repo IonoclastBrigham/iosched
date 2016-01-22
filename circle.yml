@@ -1,4 +1,4 @@
 ## Customize test commands
 test:
   override:
-    - ./gradlew :android:assembleDebug -Pcom.android.build.threadPoolSize=4
+    - ./gradlew :android:assembleDebug -Pcom.android.build.threadPoolSize=2
